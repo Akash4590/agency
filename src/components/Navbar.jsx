@@ -15,7 +15,7 @@ const Navbar = ({ theme,settheme }) => {
 
 <div className={`text-gray-700 dark:text-white sm:text-sm ${!sidebaropen ? 'max-sm:w-0 overflow-hidden': "max-sm:w-60 max-sm:pl-10" } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}>
    
-   <img src={assets.close_icon} alt=""  className='w-5 absolute rihgt-4 top-4  sm:hidden' onClick={()=>setsidebaropen(false)}/>
+   <img src={assets.close_icon} alt=""  className='w-5 absolute right-4 top-4  sm:hidden' onClick={()=>setsidebaropen(false)}/>
   <a onClick={()=>setsidebaropen(false)}  href="#" className='sm:hover:border-b'>Home</a>
 
   <a onClick={()=>setsidebaropen(false)}href="#services" className='sm:hover:border-b'>Services</a>
@@ -27,7 +27,7 @@ const Navbar = ({ theme,settheme }) => {
 </div>
 
 <div className='flex items-center gap-2 sm:gap-4'>
-       <ThemeTogglebtn theme={theme} settheme={settheme}/>       
+     <ThemeTogglebtn theme={theme} settheme={settheme}/>    
 <img src={theme === 'dark' ? assets.menu_icon_dark : assets.menu_icon} alt=""  onClick={()=>setsidebaropen(true)} className='w-8 sm:hidden'/>            
   <a
     href="#contact-us"
