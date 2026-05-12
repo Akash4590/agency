@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Trustedby from './components/Trustedby'
+import Services from './components/Services'
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const [theme, settheme] = useState(localStorage.getItem('theme') ? localStorage.
       {/* hero section */}
       <Hero/>
       <Trustedby/>
+      <Services />
     </div>
   )
 }
