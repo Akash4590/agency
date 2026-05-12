@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Trustedby from './components/Trustedby'
 import Services from './components/Services'
+import OurWork from './components/OurWork'
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const [theme, settheme] = useState(localStorage.getItem('theme') ? localStorage.
       <Hero/>
       <Trustedby/>
       <Services />
+      <OurWork/>
     </div>
   )
 }
